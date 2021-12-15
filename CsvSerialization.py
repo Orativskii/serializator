@@ -9,7 +9,6 @@ class CsvSerialization:
     @staticmethod
     def serialize(data):
         csvData = ",".join(list(data.keys())) + '\n' + ",".join(list(data.values()))
-        print(csvData)
         with open('temp\\csvData.csv', 'w') as f:
             f.write(str(csvData))
 
